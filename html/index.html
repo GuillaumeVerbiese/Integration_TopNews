@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Top News</title>
+
+    <!-- Reboot.css est un reset amélioré (avec des valeurs par défaut standardisées) https://getbootstrap.com/docs/4.1/content/reboot/ -->
+    <link rel="stylesheet" href="../css/reboot.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Partie gauche -->
+        <header id="welcome">
+            <div id="welcome-logo">
+                <img src="../images/newspaper.svg" alt="Logo onews">
+                <h1><a href="index.html">Top News</a></h1>
+            </div>
+            <div id="welcome-message">
+                <h2>Latest news <span>from our students</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In corporis tempora, quo laboriosam
+                    asperiores aspernatur illo deleniti est dicta ut rerum quas deserunt, ab quaerat praesentium
+                    necessitatibus molestiae veniam itaque.
+                </p>
+            </div>
+            <nav>
+                <!-- Emmet : ul>(li>a)*3-->
+                <ul>
+                    <li><a href="#">Plans du site</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Partie droite -->
+        <main id="content">
+            <header id="content-header">
+                <h2>Latest news</h2>
+            </header>
+
+            <!-- Emmet : section#posts>artcile.post*4 -->
+            <section id="posts">
+                <article class="post">
+                    <a href="#" class="post__badge post__badge--news">News</a>
+                    <h3 class="post__title">Lorem ipsum dolor sit amet.</h3>
+
+                    <div class="post__meta">
+                        <img src="../images/icon-john.png" class="post__meta-image" alt="Avatar John Machill">
+                        <strong class="post__meta-author">John Marchill</strong>
+                        <time datetime="2019-07-21" class="post__meta-date">le 21 Juillet 2019</time>
+                    </div>
+
+                    <p class="post__resume">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur distinctio hic cumque
+                        repellat modi repellendus.
+                    </p>
+
+                    <a href="#" class="post__reading">Continue reading</a>
+                </article>
+
+                <article class="post">
+                    <a href="#" class="post__badge post__badge--team">Team</a>
+                    <h3 class="post__title">Lorem ipsum dolor sit amet consectetur.</h3>
+
+                    <div class="post__meta">
+                        <img src="../images/icon-dar.png" class="post__meta-image" alt="Avatar Paul Darson">
+                        <strong class="post__meta-author">Paul Darson</strong>
+                        <time datetime="2019-08-02" class="post__meta-date">le 2 Août 2019</time>
+                    </div>
+
+                    <p class="post__resume">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero illo perspiciatis ducimus quasi, esse voluptatum vel id nostrum? Error totam illo a deserunt! Non, delectus! Rem veniam quisquam nesciunt.
+                    </p>
+
+                    <a href="#" class="post__reading">Continue reading</a>
+                </article>
+
+                <article class="post">
+                    <a href="#" class="post__badge post__badge--work">Work</a>
+                    <h3 class="post__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+
+                    <div class="post__meta">
+                        <img src="../images/icon-ohz.png" class="post__meta-image" alt="Avatar Bruce Ékoute">
+                        <strong class="post__meta-author">Bruce Ékoute</strong>
+                        <time datetime="2019-08-07" class="post__meta-date">le 7 Août 2019</time>
+                    </div>
+
+                    <p class="post__resume">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est, amet adipisci impedit quo accusamus laborum deserunt itaque minima maxime dolor odit voluptatibus quaerat cum earum sed! Illo ea accusantium voluptas ab minima inventore, dolores error id soluta! Veniam modi ab quas, neque ea ratione, incidunt cupiditate vero reprehenderit totam voluptatibus quaerat eius. Magnam sed vero impedit nostrum iste reiciendis quasi aliquid accusamus odio expedita quibusdam aut, ex, ducimus eaque corporis, pariatur debitis architecto! Autem quia a dolorum odit nam optio? Inventore voluptas aliquid sit architecto natus culpa rerum, fugiat delectus eius aspernatur ipsam perferendis eum a voluptatem aliquam incidunt dolore velit, commodi id cumque nostrum quo aut praesentium? Deleniti ducimus soluta facere aperiam, placeat incidunt porro. Enim, error cum.
+                    </p>
+
+                    <a href="#" class="post__reading">Continue reading</a>
+                </article>
+
+                <article class="post">
+                    <a href="#" class="post__badge post__badge--team">Team</a>
+                    <h3 class="post__title">Lorem, ipsum.</h3>
+
+                    <div class="post__meta">
+                        <img src="../images/icon-spr.png" class="post__meta-image" alt="Avatar Otis">
+                        <strong class="post__meta-author">Otis</strong>
+                        <time datetime="2019-07-21" class="post__meta-date">le 21 juillet 2019</time>
+                    </div>
+
+                    <p class="post__resume">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quidem illo, reprehenderit fuga id, cum ut molestiae amet ipsam vero harum distinctio ducimus temporibus delectus accusantium! Molestias laboriosam nam impedit.
+                    </p>
+
+                    <a href="#" class="post__reading">Continue reading</a>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

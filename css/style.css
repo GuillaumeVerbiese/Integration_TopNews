@@ -1,0 +1,165 @@
+/* =========================== */
+/* ===== Styles généraux ===== */
+/* =========================== */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#welcome,
+#content {
+    width: 50%;
+}
+
+/* =========================== */
+/* ====== Partie gauche ====== */
+/* =========================== */
+#welcome {
+    background-image: url('../images/News.jpg');
+    /* https://developer.mozilla.org/fr/docs/Web/CSS/background-position */
+    background-position: center;
+    /* https://developer.mozilla.org/fr/docs/Web/CSS/background-size */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    
+    padding: 40px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: fixed;
+}
+
+
+#welcome-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 160px;
+    line-height: 1.9em;
+    text-transform: uppercase;
+    font-size: 0.6em;
+}
+
+#welcome-logo img {
+    width: 30%;
+    margin-right: 15px;
+}
+
+#welcome-logo a {
+    color: black;
+    text-decoration: none;
+}
+
+#welcome-logo h1 {
+    margin: 0;
+    margin-top: 5px;
+}
+
+
+#welcome-message {
+    background-color: rgba(151, 151, 151, 0.3);
+    color: white;
+    padding: 30px 20px 30px 90px;
+    text-align: right;
+    text-shadow: 1px 2px 6px black;
+}
+
+#welcome-message h2 span {
+    font-size: 0.7em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#welcome nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#welcome nav ul {
+    list-style-type: none;
+}
+
+#welcome nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#welcome nav a {
+    color: white;
+    text-shadow: 1px 2px 6px black;
+}
+
+/* =========================== */
+/* ====== Partie droite ====== */
+/* =========================== */
+#content {
+    /* Etant donné que notre partie de gauche est fixed (son contenu ne prend plus de place dans le document), il faut émuler l'espace qu'il aurait du prendre. CaD 50% de la largeur de la page */
+    margin-left: 50%;
+}
+
+#content-header {
+    padding: 20px 15px;
+    background-color: #f9f9f9;
+}
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #eaeaea;
+}
+
+.post {
+    padding: 2em;
+    width: 50%;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+}
+
+.post__badge {
+    color: white;
+    background-color: grey;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 0.3em 0.4em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+.post__badge-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.post__badge--news {
+    background-color: #98DC62;
+}
+
+.post__badge--team {
+    background-color: #DC5E53;
+}
+
+.post__badge--work {
+    background-color: #0766F0;
+}
+
+.post__meta {
+    font-size: 0.8em;
+    margin: 1em 0;
+}
+
+.post__meta-image {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.post__meta-date {
+    color: grey;
+}
+
+.post__reading {
+    font-weight: bold;
+    text-decoration: underline;
+}
